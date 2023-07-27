@@ -1,0 +1,138 @@
+<head>
+	{% load static %}
+    <title>Maths et info - CPGE PT</title>
+    <link rel="stylesheet" href="{% static 'CSS/common.css' %}">
+</head>
+
+<body>
+    <header>
+    	<a href="/home/">
+        	<img src="{% static 'images/logo1.svg' %}" alt="Image" class="logo">
+    	</a>
+ 		<a href="/home/" class="title-link">
+        	<div class="title">CPGE PT - Dumont-Laplace</div>
+   		</a>
+        <div class="email">
+        	<a href="mailto:francois.lemeux@ac-normandie.fr" class="btn">Contactez-moi</a>
+		</div>
+    </header>
+
+    <div class="content">
+        {% include 'left.html' %}
+
+        <div class="right-column">
+    <!-- Titres de chapitre et boutons -->
+    <h2>Informatique en PTSI : 1er semestre</h2>    
+        <ul class="chapter-list-info">
+            <li>
+                <span class="chapter-title">TP 1 : Types de données, boucles énumératives (for), instructions conditionnelles (if)</span>
+                <button onclick="window.open('{% static 'info/TP1_1/1.pdf' %}', '_blank')">TP 1</button>
+                <button onclick="window.open('{% static 'info/TP1_1/TP1_Corrigé.py' %}', '_blank')">Corrigé TP 1</button>
+                <button onclick="window.open('{% static 'info/TP1_1/types.pdf' %}', '_blank')">Types et données (rappels)</button>
+                <button onclick="window.open('{% static 'info/TP1_1/for.pdf' %}', '_blank')">boules for (rappels)</button>
+                <button onclick="window.open('{% static 'info/TP1_1/if.pdf' %}', '_blank')">Instructions conditionnelles, if (rappels)</button>
+                
+            </li>
+            <li>
+                <span class="chapter-title">TP 2 : boucles (for et while) et fonctions</span>
+                <button onclick="window.open('{% static 'info/TP1_2/TP2.pdf' %}', '_blank')">TP 2</button>
+                <button onclick="window.open('{% static 'info/TP1_2/TP2_corrigé.py' %}', '_blank')">Corrigé TP2</button>
+                <button onclick="window.open('{% static 'info/TP1_2/while.pdf' %}', '_blank')">Boucles conditionnelles, while (rappels)</button>
+                <button onclick="window.open('{% static 'info/TP1_2/fonctions.pdf' %}', '_blank')">fonctions (rappels)</button>
+            </li>
+            <li>
+                <span class="chapter-title">TP 3 : boucles imbriquées</span>
+                <button onclick="window.open('{% static 'info/TP1_3/TP3.pdf' %}', '_blank')">TP 3</button>
+            </li>
+            <li>
+                <span class="chapter-title">TP 4 : lecture dans un fichier et représentation graphique </span>
+                <button onclick="window.open('{% static 'info/TP1_4/TP4.pdf' %}', '_blank')">TP 4</button>
+                <button onclick="window.open('{% static 'info/TP1_4/TP4_corrigé.py' %}', '_blank')">corrigé TP 4</button>
+                <p>Cliquez sur le bouton pour télécharger les fichiers ".txt" nécessaires au TP sous forme d'une archive zip:
+                <a href="{% static 'info/TP1_4/dataTP4.zip' %}" download="dataTP4.zip">
+                <button>Télécharger</button>
+                </p>
+                </a>
+            </li>
+            <li>
+                <span class="chapter-title">TP 5 : Traitement des images</span>
+                <button onclick="window.open('{% static 'info/TP1_5/TP5.pdf' %}', '_blank')">TP 5</button>
+                <p>Cliquez sur le bouton pour télécharger les fichiers ".png" nécessaires au TP sous forme d'une archive zip:
+                <a href="{% static 'info/TP1_5/dataTP5.zip' %}" download="dataTP5.zip">
+                <button>Télécharger</button>
+                </p>
+                </a>
+            </li>
+            <li>
+                <span class="chapter-title">TP 6 : Récursivité + recherche dichotomique</span>
+                <button onclick="window.open('{% static 'info/TP1_6/TP6.pdf' %}', '_blank')">TP 6</button>
+                <button onclick="window.open('{% static 'info/TP1_6/récursivité.pdf' %}', '_blank')">Récursivité (rappels)</button>
+            </li>
+            <!-- Ajoutez les autres chapitres de la même manière -->
+        </ul>
+
+        <ul class="chapter-list">
+            <li>
+                <span class="chapter-title">TP 7 : Algorithmes gloutons</span>
+                <button onclick="window.open('{% static 'info/TP1_7/TP7.pdf' %}', '_blank')">TP 7</button>
+            </li>
+            <!-- Ajoutez les autres chapitres de la même manière -->
+        </ul>
+    
+    
+    <h2>Informatique en PTSI : 2ème semestre</h2>
+    
+    <ul class="chapter-list-info">
+            <li>
+                <span class="chapter-title">Complexité</span>
+                <button onclick="window.open('{% static 'info/TP2_1/complex.pdf' %}', '_blank')">Cours</button>                
+            </li>
+            <li>
+                <span class="chapter-title">Correction et terminaison de boucles</span>
+                <button onclick="window.open('{% static 'info/TP2_2/invariant.pdf' %}', '_blank')">Cours</button>                
+            </li>
+            <li>
+                <span class="chapter-title">Théorie des graphes</span>
+                <button onclick="window.open('{% static 'info/TP2_3/Graphes.pdf' %}', '_blank')">Cours</button>
+                <br>
+                <br>
+                <button onclick="window.open('{% static 'info/TP2_3/TP1.pdf' %}', '_blank')">TP : parcours sur un graphe</button>
+                <button onclick="window.open('{% static 'info/TP2_3/TP1_corrigé.py' %}', '_blank')">Corrigé TP : parcours dans un graphe</button>
+                <br>
+                <br>
+                <button onclick="window.open('{% static 'info/TP2_3/TP2.pdf' %}', '_blank')">TP : algorithmes de plus court chemin</button>
+                <button onclick="window.open('{% static 'info/TP2_3/Annexes.pdf' %}', '_blank')">Annexes TP : algorithmes de plus court chemin</button>
+            </li>
+            <li>
+                <span class="chapter-title">Algorithmes de tri</span>
+                <button onclick="window.open('{% static 'info/TP2_4/Cours.pdf' %}', '_blank')">Cours</button>
+            </li>
+            <li>
+                <span class="chapter-title">Représentation des nombres</span>
+                <button onclick="window.open('{% static 'info/TP2_5/Cours.pdf' %}', '_blank')">Cours</button>
+            </li>
+    </ul>
+    
+    <h2>Informatique en PTSI : TP d'entrainement</h2>
+    
+        <ul class="chapter-list-info">
+            <li>
+                <span class="chapter-title">Méthode d'Euler</span>
+                <button onclick="window.open('{% static 'info/TP3_1/Euler.pdf' %}', '_blank')">Méthode d'Euler</button>
+            </li>
+            <li>
+                <span class="chapter-title">Carrés magiques</span>
+                <button onclick="window.open('{% static 'info/TP3_2/carrés.pdf' %}', '_blank')">Carrés magiques</button>
+            </li>
+            <li>
+                <span class="chapter-title">Recherche d'un zéro d'une fonction</span>
+                <button onclick="window.open('{% static 'info/TP3_3/newton.pdf' %}', '_blank')">Newton, dichotomie </button>
+            </li>
+    </ul>
+
+    
+</div>
+
+
+    </div>
+</body>

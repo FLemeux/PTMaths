@@ -1,0 +1,87 @@
+<head>
+	{% load static %}
+    <title>Maths et info - CPGE PT</title>
+    <link rel="stylesheet" href="{% static 'CSS/common.css' %}">
+</head>
+
+<body>
+    <header>
+    	<a href="/home/">
+        	<img src="{% static 'images/logo1.svg' %}" alt="Image" class="logo">
+    	</a>
+ 		<a href="/home/" class="title-link">
+        	<div class="title">CPGE PT - Dumont-Laplace</div>
+   		</a>
+        <div class="email">
+        	<a href="mailto:francois.lemeux@ac-normandie.fr" class="btn">Contactez-moi</a>
+		</div>
+    </header>
+
+    <div class="content">
+        {% include 'left.html' %}
+
+        <div class="right-column">
+    <!-- Titres de chapitre et boutons -->
+    <h2>Programmes de colles</h2>
+    <div class="chapter-columns">
+        <ul class="chapter-list">
+            <li>
+                <span class="chapter-title">Semaines 1 et 2 : séries numériques</span>
+                <button onclick="window.open('{% static 'Colles/Kholle1_2.pdf' %}', '_blank')">Voir PDF</button>
+            </li>
+            <li>
+                <span class="chapter-title">Semaines 3 et 4 : intégrales généralisées</span>
+                <button onclick="window.open('{% static 'Colles/Kholle3_4.pdf' %}', '_blank')">Voir PDF</button>
+            </li>
+            <li>
+                <span class="chapter-title">Semaines 5 et 6 : algèbre linéaire</span>
+                <button onclick="window.open('{% static 'Colles/Kholle5_6.pdf' %}', '_blank')">Voir PDF</button>
+            </li>
+            <li>
+                <span class="chapter-title">Semaines 7 et 8 : Séries entières</span>
+                <button onclick="window.open('{% static 'Colles/Kholle7_8.pdf' %}', '_blank')">Voir PDF</button>
+            </li>
+            <li>
+                <span class="chapter-title">Semaines 9 et 10 : Réduction</span>
+                <button onclick="window.open('{% static 'Colles/Kholle9_10.pdf' %}', '_blank')">Voir PDF</button>
+            </li>
+            <li>
+                <span class="chapter-title">Semaines 11 et 12 : Equations différentielles</span>
+                <button onclick="window.open('{% static 'Colles/Kholle11_12.pdf' %}', '_blank')">Voir PDF</button>
+            </li>
+            <!-- Ajoutez les autres chapitres de la même manière -->
+        </ul>
+
+        <ul class="chapter-list">
+            <li>
+                <span class="chapter-title">Semaines 13 et 14 : Courbes planes</span>
+                <button onclick="window.open('{% static 'Colles/Kholle13_14.pdf' %}', '_blank')">Voir PDF</button>
+            <li>
+                <span class="chapter-title">Semaines 15 et 16 : Espaces probabilisés</span>
+                <button onclick="window.open('{% static 'Colles/Kholle15_16.pdf' %}', '_blank')">Voir PDF</button>
+            </li>
+            <li>
+                <span class="chapter-title">Semaines 17 et 18 : Espaces préhilbertiens et isométries </span>
+                <button onclick="window.open('{% static 'Colles/Kholle17_18.pdf' %}', '_blank')">Voir PDF</button>
+            </li>
+            <li>
+                <span class="chapter-title">Semaines 19 et 20 : Matrices symétriques et coniques</span>
+                <button onclick="window.open('{% static 'Colles/Kholle19_20.pdf' %}', '_blank')">Voir PDF</button>
+            </li>
+            <li>
+                <span class="chapter-title">Semaines 21 et 22 : Variables aléatoires</span>
+                <button onclick="window.open('{% static 'Colles/Kholle21_22.pdf' %}', '_blank')">Voir PDF</button>
+            </li>
+            <li>
+                <span class="chapter-title">Semaines 23 et 24 : V.A.R. + intégrales à paramètre</span>
+                <button onclick="window.open('{% static 'Colles/Kholle21_22.pdf' %}', '_blank')">Voir PDF</button>
+            </li>
+           
+            <!-- Ajoutez les autres chapitres de la même manière -->
+        </ul>
+    </div>
+</div>
+
+
+    </div>
+</body>

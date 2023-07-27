@@ -1,0 +1,98 @@
+<head>
+	{% load static %}
+    <title>Maths et info - CPGE PT</title>
+    <link rel="stylesheet" href="{% static 'CSS/common.css' %}">
+</head>
+
+<body>
+    <header>
+    	<a href="/home/">
+        	<img src="{% static 'images/logo1.svg' %}" alt="Image" class="logo">
+    	</a>
+ 		<a href="/home/" class="title-link">
+        	<div class="title">CPGE PT - Dumont-Laplace</div>
+   		</a>
+        <div class="email">
+        	<a href="mailto:francois.lemeux@ac-normandie.fr" class="btn">Contactez-moi</a>
+		</div>
+    </header>
+
+    <div class="content">
+        {% include 'left.html' %}
+
+        <div class="right-column">
+    <!-- Titres de chapitre et boutons -->
+    <h2>Devoirs maison (2022)</h2>
+    <div class="chapter-columns">
+        <ul class="chapter-list">
+            <li>
+                <span class="chapter-title">DM 1 : travail estival</span>
+                <button onclick="window.open('{% static 'DM/1.pdf' %}', '_blank')">Voir PDF</button>
+            </li>
+            <li>
+                <span class="chapter-title">DM 2 : Séries numériques</span>
+                <button onclick="window.open('{% static 'DM/2.pdf' %}', '_blank')">Voir PDF</button>
+            </li>
+            <li>
+                <span class="chapter-title">DM 3 : intégrales généralisées</span>
+                <button onclick="window.open('{% static 'DM/3.pdf' %}', '_blank')">Voir PDF</button>
+            </li>
+            <li>
+                <span class="chapter-title">DM 4 : Algèbre linéaire</span>
+                <button onclick="window.open('{% static 'DM/4.pdf' %}', '_blank')">Voir PDF</button>
+            </li>
+            <li>
+                <span class="chapter-title">DM 5 : Séries entières (Maths C)</span>
+                <button onclick="window.open('{% static 'DM/5.pdf' %}', '_blank')">Voir PDF</button>
+            </li>
+            <li>
+                <span class="chapter-title">DM 6 : Réduction</span>
+                <button onclick="window.open('{% static 'DM/6.pdf' %}', '_blank')">Voir PDF</button>
+            </li>
+            <li>
+                <span class="chapter-title">DM 7 : Equations différentielles</span>
+                <button onclick="window.open('{% static 'DM/7.pdf' %}', '_blank')">Voir PDF</button>
+            </li>
+            <li>
+                <span class="chapter-title">DM 8 : Courbes planes</span>
+                <button onclick="window.open('{% static 'DM/8.pdf' %}', '_blank')">Voir PDF</button>
+            </li>
+            <!-- Ajoutez les autres chapitres de la même manière -->
+        </ul>
+
+        <ul class="chapter-list">
+            <li>
+                <span class="chapter-title">DM 9 : Synthèse + Python</span>
+                <button onclick="window.open('{% static 'DM/9.pdf' %}', '_blank')">Voir PDF</button>
+            </li>
+            <li>
+                <span class="chapter-title">DM 10 : Maths A 2014</span>
+                <button onclick="window.open('{% static 'DM/10.pdf' %}', '_blank')">Voir PDF</button>
+            </li>
+            <li>
+                <span class="chapter-title">DM 11 : Maths A</span>
+                <button onclick="window.open('{% static 'DM/11.pdf' %}', '_blank')">Voir PDF</button>
+            </li>
+            <li>
+                <span class="chapter-title">DM 12 : Maths B</span>
+                <button onclick="window.open('{% static 'DM/12.pdf' %}', '_blank')">Voir PDF</button>
+            </li>
+            <li>
+                <span class="chapter-title">DM 13 : Coniques</span>
+                <button onclick="window.open('{% static 'DM/13.pdf' %}', '_blank')">Voir PDF</button>
+            </li>
+            <li>
+                <span class="chapter-title">DM 14 : Maths A</span>
+                <button onclick="window.open('{% static 'DM/14.pdf' %}', '_blank')">Voir PDF</button>
+            </li>
+            <!-- Ajoutez les autres chapitres de la même manière -->
+        </ul>
+    </div>
+</div>
+
+
+    </div>
+    
+
+
+</body>

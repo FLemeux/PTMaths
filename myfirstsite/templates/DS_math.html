@@ -1,0 +1,67 @@
+<head>
+	{% load static %}
+    <title>Maths et info - CPGE PT</title>
+    <link rel="stylesheet" href="{% static 'CSS/common.css' %}">
+</head>
+
+<body>
+    <header>
+    	<a href="/home/">
+        	<img src="{% static 'images/logo1.svg' %}" alt="Image" class="logo">
+    	</a>
+ 		<a href="/home/" class="title-link">
+        	<div class="title">CPGE PT - Dumont-Laplace</div>
+   		</a>
+        <div class="email">
+        	<a href="mailto:francois.lemeux@ac-normandie.fr" class="btn">Contactez-moi</a>
+		</div>
+    </header>
+
+    <div class="content">
+        {% include 'left.html' %}
+
+        <div class="right-column">
+    <!-- Titres de chapitre et boutons -->
+    <h2>Devoirs surveillés de mathématiques (2022)</h2>
+    <div class="chapter-columns">
+        <ul class="chapter-list">
+            <li>
+                <span class="chapter-title">DS 1 : intégrales généralisées et séries</span>
+                <button onclick="window.open('{% static 'DS/1.pdf' %}', '_blank')">DS 1</button>
+            </li>
+            <li>
+                <span class="chapter-title">DS 2 : Analyse et algèbre linéaire</span>
+                <button onclick="window.open('{% static 'DS/2.pdf' %}', '_blank')">DS 2</button>
+            </li>
+            <li>
+                <span class="chapter-title">DS 3 : Réduction et algèbre linéaire</span>
+                <button onclick="window.open('{% static 'DS/3.pdf' %}', '_blank')">DS 3</button>
+            </li>
+            <li>
+                <span class="chapter-title">DS 4 : Courbes planes, réduction, probabilités</span>
+                <button onclick="window.open('{% static 'DS/4.pdf' %}', '_blank')">DS 4</button>
+            </li>
+            <!-- Ajoutez les autres chapitres de la même manière -->
+        </ul>
+
+        <ul class="chapter-list">
+            <li>
+                <span class="chapter-title">DS 5 : Coniques et réduction</span>
+                <button onclick="window.open('{% static 'DS/5.pdf' %}', '_blank')">DS 5</button>
+            </li>
+            <li>
+                <span class="chapter-title">DS 6 : Géométrie plane et analyse</span>
+                <button onclick="window.open('{% static 'DS/6.pdf' %}', '_blank')">DS 6</button>
+            </li>
+            <li>
+                <span class="chapter-title">DS 7 : Intégrales à paramètre et surfaces de l'espace</span>
+                <button onclick="window.open('{% static 'DS/7.pdf' %}', '_blank')">DS 7</button>
+            </li>
+            <!-- Ajoutez les autres chapitres de la même manière -->
+        </ul>
+    </div>
+</div>
+
+
+    </div>
+</body>

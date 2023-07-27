@@ -1,0 +1,103 @@
+<head>
+	{% load static %}
+    <title>Maths et info - CPGE PT</title>
+    <link rel="stylesheet" href="{% static 'CSS/common.css' %}">
+</head>
+
+<body>
+    <header>
+    	<a href="/home/">
+        	<img src="{% static 'images/logo1.svg' %}" alt="Image" class="logo">
+    	</a>
+ 		<a href="/home/" class="title-link">
+        	<div class="title">CPGE PT - Dumont-Laplace</div>
+   		</a>
+        <div class="email">
+        	<a href="mailto:francois.lemeux@ac-normandie.fr" class="btn">Contactez-moi</a>
+		</div>
+    </header>
+
+    <div class="content">
+        {% include 'left.html' %}
+
+        <div class="right-column">
+    <!-- Titres de chapitre et boutons -->
+    <h2>Exercices utilisés en TD de mathématiques</h2>
+    <div class="chapter-columns">
+        <ul class="chapter-list">
+            <li>
+                <span class="chapter-title">Chapitre 1 : séries numériques</span>
+                <button onclick="window.open('{% static 'exos/1.pdf' %}', '_blank')">Voir PDF</button>
+            </li>
+            <li>
+                <span class="chapter-title">Chapitre 2 : intégrales généralisées</span>
+                <button onclick="window.open('{% static 'exos/2.pdf' %}', '_blank')">Voir PDF</button>
+            </li>
+            <li>
+                <span class="chapter-title">Chapitre 3 : Algèbre linéaire, compléments</span>
+                <button onclick="window.open('{% static 'exos/3.pdf' %}', '_blank')">Voir PDF</button>
+            </li>
+            <li>
+                <span class="chapter-title">Chapitre 4 : Séries entières</span>
+                <button onclick="window.open('{% static 'exos/4.pdf' %}', '_blank')">Voir PDF</button>
+            </li>
+            <li>
+                <span class="chapter-title">Chapitre 5 : Déterminants</span>
+                <button onclick="window.open('{% static 'exos/5.pdf' %}', '_blank')">Voir PDF</button>
+            </li>
+            <li>
+                <span class="chapter-title">Chapitre 6 : Réduction</span>
+                <button onclick="window.open('{% static 'exos/6.pdf' %}', '_blank')">Voir PDF</button>
+            </li>
+            <li>
+                <span class="chapter-title">Chapitre 7 : Equations différentielles</span>
+                <button onclick="window.open('{% static 'exos/7.pdf' %}', '_blank')">Voir PDF</button>
+            </li>
+            <li>
+                <span class="chapter-title">Chapitre 8 : Courbes planes</span>
+                <button onclick="window.open('{% static 'exos/8.pdf' %}', '_blank')">Voir PDF</button>
+            </li>
+            <!-- Ajoutez les autres chapitres de la même manière -->
+        </ul>
+
+        <ul class="chapter-list">
+            <li>
+                <span class="chapter-title">Chapitre 9 : Espaces probabilisés</span>
+                <button onclick="window.open('{% static 'exos/9.pdf' %}', '_blank')">Voir PDF</button>
+            </li>
+            <li>
+                <span class="chapter-title">Chapitre 10 : Espaces préhilbertiens</span>
+                <button onclick="window.open('{% static 'exos/10.pdf' %}', '_blank')">Voir PDF</button>
+            </li>
+            <li>
+                <span class="chapter-title">Chapitre 11 : Isométries</span>
+                <button onclick="window.open('{% static 'exos/11.pdf' %}', '_blank')">Voir PDF</button>
+            </li>
+            <li>
+                <span class="chapter-title">Chapitre 12 : Coniques</span>
+                <button onclick="window.open('{% static 'exos/12.pdf' %}', '_blank')">Voir PDF</button>
+            </li>
+            <li>
+                <span class="chapter-title">Chapitre 13 : Fonctions de plusieurs variables</span>
+                <button onclick="window.open('{% static 'exos/13.pdf' %}', '_blank')">Voir PDF</button>
+            </li>
+            <li>
+                <span class="chapter-title">Chapitre 14 : Variables aléatoires</span>
+                <button onclick="window.open('{% static 'exos/14.pdf' %}', '_blank')">Voir PDF</button>
+            </li>
+            <li>
+                <span class="chapter-title">Chapitre 15 : Intégrales à paramètre</span>
+                <button onclick="window.open('{% static 'exos/15.pdf' %}', '_blank')">Voir PDF</button>
+            </li>
+            <li>
+                <span class="chapter-title">Chapitre 16 : Courbes et surfaces</span>
+                <button onclick="window.open('{% static 'exos/16.pdf' %}', '_blank')">Voir PDF</button>
+            </li>
+            <!-- Ajoutez les autres chapitres de la même manière -->
+        </ul>
+    </div>
+</div>
+
+
+    </div>
+</body>
