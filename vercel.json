@@ -1,17 +1,17 @@
 {
-    "builds": [
-      {
-        "src": "django_app_name/wsgi.py",
-        "use": "@vercel/python"
-      }
-    ],
-    "routes": [
-      {
-        "src": "/(.*)",
-        "dest": "django_app_name/wsgi.py"
-      }
-    ]
-    "functions": {
+  "builds": [
+    {
+      "src": "django_app_name/wsgi.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "django_app_name/wsgi.py"
+    }
+  ],
+  "functions": {
     "api/**/*.py": {
       "excludeFiles": "**/*.html"
     }
