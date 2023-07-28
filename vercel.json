@@ -10,5 +10,11 @@
         "src": "/(.*)",
         "dest": "myfirstsite/wsgi.py"
       }
-    ]
+    ],
+    "functions": [
+    "api/**/*.py": {
+      "excludeFiles": "**/*.html"
+    }
+  ]
+
 }
