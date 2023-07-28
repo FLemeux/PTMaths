@@ -11,10 +11,7 @@
         "dest": "django_app_name/wsgi.py"
       }
     ]
-}
-
-{
-  "functions": {
+    "functions": {
     "api/**/*.py": {
       "excludeFiles": "**/*.html"
     }
