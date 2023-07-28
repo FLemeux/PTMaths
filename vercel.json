@@ -12,3 +12,11 @@
       }
     ]
 }
+
+{
+  "functions": {
+    "api/**/*.py": {
+      "excludeFiles": "**/*.html"
+    }
+  }
+}
